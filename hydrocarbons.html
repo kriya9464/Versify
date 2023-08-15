@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hydrocarbons</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="js/aframe-event-set-component.min.js"></script>
+    <script src="hydro.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="hydro" src="img/hydro.jpeg" alt="">
+            <img id="carbon" src="img/carbon.jpg" alt="">
+            <img id="hydrogen" src="img/hydrogen.png" alt="">
+           <!--  <img id="metallic" src="img/metallic.avif" alt="">
+             -->
+        </a-assets>
+    <a-sky src="#hydro" rotation="0 0 0" ></a-sky>
+
+    <!-- CH4 -->
+    
+    <a-entity cursor="" animation="property: rotation; to: 0 -360 0; loop: true; dur: 8000">
+    <a-sphere material="src:#carbon" radius="2" position="0 0 0"></a-sphere>
+    <a-sphere material="src:#hydrogen" radius="2" position="0 6 0"></a-sphere>
+    <a-sphere material="src:#hydrogen" radius="2" position="-3 -5 0"></a-sphere>
+    <a-sphere material="src:#hydrogen" radius="2" position="3 -5 0"></a-sphere>
+    <a-sphere material="src:#hydrogen" radius="2" position="0 -5 -5"></a-sphere>
+    
+    <a-cylinder color="silver" height="3" material="" geometry="" rotation="0 0 0" position="-0.055 2.905 0" radius="0.5"></a-cylinder>
+    <a-cylinder color="silver" height="4.5" radius="0.5" material="" geometry="" rotation="0 0 -35" position="-2.334 -2.805 -0.905" ></a-cylinder>
+    <a-cylinder color="silver" height="4.5" material="" geometry="" rotation="0 0 35" position="2.485 -2.698 -0.194" radius="0.5"></a-cylinder>
+    <a-cylinder color="silver" height="6" material="" geometry="" rotation="45 0 0" position="-0.009 -1.867 -1.536" radius="0.5"></a-cylinder>
+    
+</a-entity>
+
+
+
+<!-- <a-entity position="50 5 0" radius="0"> -->
+
+<a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
+
+<a-sphere material="src:#carbon" radius="2" position="40 10 0"></a-sphere>
+    <a-sphere material="src:#carbon" radius="2" position="35 5 0"></a-sphere>
+    <a-sphere material="src:#carbon" radius="2" position="45 5 0"></a-sphere>
+    <a-sphere material="src:#carbon" radius="2" position="35 0 0"></a-sphere>
+    <a-sphere material="src:#carbon" radius="2" position="45 0 0"></a-sphere>
+    <a-sphere material="src:#carbon" radius="2" position="40 -5 0"></a-sphere>
+<a-sphere material="src:#hydrogen" radius="2" position="40 17 0"></a-sphere>
+    <a-sphere material="src:#hydrogen" radius="2" position="28 7 0"></a-sphere>
+    <a-sphere material="src:#hydrogen" radius="2" position="52 7 0"></a-sphere>
+    <a-sphere material="src:#hydrogen" radius="2" position="28 -3 0"></a-sphere>
+    <a-sphere material="src:#hydrogen" radius="2" position="52 -3 0"></a-sphere>
+    <a-sphere material="src:#hydrogen" radius="2" position="40 -12 0"></a-sphere>
+
+    <a-cylinder color="silver" height="7" material="" geometry="" rotation="0 0 0" position="40 13.572 0" radius="0.5"></a-cylinder>
+    <a-cylinder color="silver" height="7" material="" geometry="" rotation="0 0 0" position="40 -8.255 0" radius="0.5"></a-cylinder>
+    <a-cylinder color="silver" height="5" material="" geometry="" rotation="0 0 0" position="35.068 2.580 0" radius="0.5"></a-cylinder>
+    <a-cylinder color="silver" height="5" material="" geometry="" rotation="0 0 0" position="45.5 2.580 0" radius="0.25"></a-cylinder>
+    <a-cylinder color="silver" height="5" material="" geometry="" rotation="0 0 0" position="44.5 2.580 0" radius="0.25"></a-cylinder>
+
+    <a-cylinder color="silver" height="7" material="" geometry="" rotation="0 0 -55" position="36.751 7.638 0" radius="0.25"></a-cylinder>
+    <a-cylinder color="silver" height="7" material="" geometry="" rotation="0 0 -55" position="37.2 7 0" radius="0.25"></a-cylinder>
+    <a-cylinder color="silver" height="7" material="" geometry="" rotation="0 0 45" position="37.501 -4.138 0" radius="0.25"></a-cylinder>
+    <a-cylinder color="silver" height="7" material="" geometry="" rotation="0 0 45" position="38.4 -3.7 0" radius="0.25"></a-cylinder>
+
+    <a-cylinder color="silver" height="6" material="" geometry="" rotation="0 0 -50" position="42.602 -3.196 0" radius="0.5"></a-cylinder>
+
+    <a-cylinder color="silver" height="7" material="" geometry="" rotation="0 0 45" position="42.602 7 0" radius="0.5"></a-cylinder>
+    <a-cylinder color="silver" height="7" material="" geometry="" rotation="0 0 75" position="31.899 5.988 0" radius="0.5"></a-cylinder>
+    <a-cylinder color="silver" height="7" material="" geometry="" rotation="0 0 70" position="49.517 -1.862 0" radius="0.5"></a-cylinder>
+
+    <a-cylinder color="silver" height="6" material="" geometry="" rotation="0 0 -65" position="31.640 -1.770 0" radius="0.5"></a-cylinder>
+    <a-cylinder color="silver" height="6" material="" geometry="" rotation="0 0 -75.000" position="48.768 6.169 0" radius="0.5"></a-cylinder>
+</a-entity>
+<!-- </a-entity> -->
+
+
+<!-- ethane -->
+<!-- <a-entity position="-70 0 0"> -->
+
+<a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
+
+<a-sphere material="src:#carbon" radius="2" position="-40 0 0"></a-sphere>
+<a-sphere material="src:#carbon" radius="2" position="-30 0 0"></a-sphere>
+<a-sphere material="src:#hydrogen" radius="2" position="-40 7 0"></a-sphere>
+<a-sphere material="src:#hydrogen" radius="2" position="-30 7 0"></a-sphere>
+<a-sphere material="src:#hydrogen" radius="2" position="-40 -7 -5"></a-sphere>
+<a-sphere material="src:#hydrogen" radius="2" position="-40 -7 5"></a-sphere>
+<a-sphere material="src:#hydrogen" radius="2" position="-30 -7 5"></a-sphere>
+<a-sphere material="src:#hydrogen" radius="2" position="-30 -7 -5"></a-sphere>
+
+  <a-cylinder color="silver" height="10" material="" geometry="" rotation="0 0 90" position="-35 0 0" radius="0.5"></a-cylinder>      
+  <a-cylinder color="silver" height="10" material="" geometry="" rotation="0 0 0" position="-30 3.5 0" radius="0.5"></a-cylinder>      
+  <a-cylinder color="silver" height="10" material="" geometry="" rotation="0 0 0" position="-40 3.5 0" radius="0.5"></a-cylinder>      
+  <a-cylinder color="silver" height="10" material="" geometry="height: 7" rotation="-22.70803629441992 66.61665692427056 -34.025098663843934" position="-29.74021 -3.61487 3.17052" radius="0.5"></a-cylinder>      
+  <a-cylinder color="silver" height="10" material="" geometry="height: 8" rotation="8.795475113053268 73.46579440726441 33.72658765258078" position="-29.8189 -3.94289 -3.80688" radius="0.5"></a-cylinder>
+  <a-cylinder color="silver" height="10" material="" geometry="height: 7" rotation="-33.45156791091799 22.636989527823694 -5.9707931830583085" position="-39.68418 -4.05296 2.6183" radius="0.5"></a-cylinder>
+  <a-cylinder color="silver" height="10" material="" geometry="height: 8" rotation="36.565 6.634 3.964" position="-40.50858 -4.49072 -3.36433" radius="0.5"></a-cylinder>
+
+</a-entity >
+
+<a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
+    <a-sphere position="-47 10 -40" radius="2" material="src:#hydrogen"></a-sphere>
+    <a-sphere position="-40 10 -40" radius="2" material="src:#carbon"></a-sphere>
+    <a-sphere position="-33 10 -40" radius="2" material="src:#carbon"></a-sphere>
+    <a-sphere position="-26 10 -40" radius="2" material="src:#carbon"></a-sphere>
+    <a-sphere position="-19 10 -40" radius="2" material="src:#hydrogen"></a-sphere>
+    <a-sphere position="-26 17 -40" radius="2" material="src:#hydrogen"></a-sphere>
+    <a-sphere position="-26 3 -40" radius="2" material="src:#hydrogen"></a-sphere>
+
+    <a-cylinder color="silver" height="7" material="" geometry="" rotation="0 0 90" position="-43.5 10 -40" radius="0.5"></a-cylinder>
+    <a-cylinder color="silver" height="7" material="" geometry="" rotation="0 0 90" position="-37.5 11 -40" radius="0.25"></a-cylinder>
+    <a-cylinder color="silver" height="7" material="" geometry="" rotation="0 0 90" position="-37.5 10 -40" radius="0.25"></a-cylinder>
+    <a-cylinder color="silver" height="7" material="" geometry="" rotation="0 0 90" position="-37.5 9 -40" radius="0.25"></a-cylinder>
+    <a-cylinder color="silver" height="7" material="" geometry="" rotation="0 0 90" position="-29.5 10 -40" radius="0.5"></a-cylinder>
+    <a-cylinder color="silver" height="7" material="" geometry="" rotation="0 0 90" position="-23.5 10 -40" radius="0.5"></a-cylinder>
+    <a-cylinder color="silver" height="7" material="" geometry="" rotation="0 0 0" position="-26 13.5 -40" radius="0.5"></a-cylinder>
+    <a-cylinder color="silver" height="7" material="" geometry="" rotation="0 0 0" position="-26 7.5 -40" radius="0.5"></a-cylinder>
+</a-entity>
+
+<a-entity visible="false">
+    <a-text value="Hello, World!" position="0 0 0" color="white"></a-text>
+</a-entity>
+
+</a-scene>
+</body>
+</html>
